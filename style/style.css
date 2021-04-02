@@ -166,7 +166,7 @@ input:checked + .slider:before {
   background-color: hsl(208, 92%, 53%);
 }
 
-.twitter ::before {
+.twitter::before {
   background-color: hsl(203, 89%, 53%);
 }
 .instagram::before {
@@ -331,7 +331,7 @@ header.dark-mode {
   .header-container {
     flex-direction: column;
   }
-  .switch-button-container{
+  .switch-button-container {
     margin: 15px 0 40px 0;
     width: 100%;
     justify-content: space-between;
@@ -352,7 +352,60 @@ header.dark-mode {
     grid-template-rows: repeat(8, 1fr);
     justify-content: center;
   }
-  main{
-      top: -65px;
+  main {
+    top: -65px;
   }
+}
+
+/* animations */
+
+.title {
+  animation-name: fromUp;
+  animation-duration: 0.5s;
+}
+.switch-button-container {
+  animation: fromUp .5s forwards;
+}
+.info-item,
+.over-card {
+  transform: scale(0, 0);
+  animation: showValues 1.5s 0.5s forwards;
+  transition: all 0.2s ease-in-out;
+}
+.overview h2 {
+  animation: fromUp 1.5s forwards;
+}
+@keyframes fromUp {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: ease-in;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes showValues {
+  0% {
+    transform: scale(0, 0);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* hover */
+.info-item.dark-mode:hover,
+.over-card.dark-mode:hover {
+  background-color: #333A56;
+  cursor: pointer;
+}
+.info-item:hover,
+.over-card:hover {
+  background-color: #e1e3f0;
+  cursor: pointer;
 }

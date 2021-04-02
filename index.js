@@ -9,4 +9,3 @@ function handleClick(){
 const runFuncInArray = (list, func) => list.forEach(item => func(item));
 const removeDarkMode = item => item.classList.remove('dark-mode');
 const addDarkMode = item =>  item.classList.add('dark-mode');
-
