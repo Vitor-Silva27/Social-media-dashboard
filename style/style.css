@@ -1,0 +1,127 @@
+/* css reset */
+html, body, div,p,
+h1, h2, h3, h4,img,header, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Inter', sans-serif;
+}
+
+footer, header,section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+.container{
+    max-width: 1112px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* header */
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.title h1{
+    letter-spacing: 3.5%;
+    font-weight: 700;
+    font-size: 1.75em;
+    color: hsl(230, 17%, 14%);
+    margin-bottom: 10px;
+}
+.title p{
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%)
+}
+
+/* main information */
+.main-info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    grid-auto-flow: row;
+}
+
+.info-item{
+    background-color: hsl(227, 47%, 96%);
+    max-width: 255px;
+    height: 215px;
+    text-align: center;
+    border-radius: 5px;
+}
+.facebook{border-top: 5px solid hsl(208, 92%, 53%);}
+.twitter{border-top: 5px solid hsl(203, 89%, 53%)}
+.instagram{
+    position: relative;
+}
+.instagram::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+.youtube{border-top: 5px solid hsl(348, 97%, 39%);}
+.info-username{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+.info-username p{
+    font-size: 0.75em;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+    margin-left: 10px;
+}
+
+.info-username img{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.info-value{
+    font-size: 3.5em;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 5px;
+}
+.info-text{
+    color: hsl(228, 12%, 44%);
+    font-size: 0.8125em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.statistic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+.info-day-value{
+    font-size: 0.8em;
+    font-weight: 700;
+    color: hsl(163, 72%, 41%);
+    margin-left: 5px;
+}
+.down{
+    color: hsl(356, 69%, 56%);
+}

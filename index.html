@@ -3,62 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Social media dashboard</title>
   </head>
+
   <body>
     <header>
-      <h1>Social Media Dashboard</h1>
-      <h2>Total Followers: 23,004</h2>
-
-      <div>
-        <p>Dark Mode</p>
+      <div class="container header-container">
+        <div class="title">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="switch-button-container">
+          <p>Dark Mode</p>
+          <div class="switch-button"></div>
+        </div>
       </div>
     </header>
 
-    <section>
-      <div>
-        <div>
+    <section class="container main-info">
+      <div class="info-item facebook">
+        <div class="info-username">
           <img src="./images/icon-facebook.svg" alt="facebook logo" />
           <p>@nathanf</p>
         </div>
-        <h3>1987</h3>
-        <h4>Followers</h4>
-        <p>12 Today</p>
+        <h3 class="info-value">1987</h3>
+        <h4 class="info-text">Followers</h4>
+        <div class="statistic">
+          <img src="./images/icon-up.svg" />
+          <p class="info-day-value">12 Today</p>
+        </div>
       </div>
 
-      <div>
-        <div>
+      <div class="info-item twitter">
+        <div class="info-username">
           <img src="./images/icon-twitter.svg" alt="twitter logo" />
           <p>@nathanf</p>
         </div>
-        <h3>1044</h3>
-        <h4>Followers</h4>
-        <p>99 Today</p>
+        <h3 class="info-value">1044</h3>
+        <h4 class="info-text">Followers</h4>
+        <div class="statistic">
+          <img src="./images/icon-up.svg" />
+          <p class="info-day-value">99 Today</p>
+        </div>
       </div>
 
-      <div>
-        <div>
+      <div class="info-item instagram">
+        <div class="info-username">
           <img src="./images/icon-instagram.svg" alt="instagram logo" />
           <p>@realnathanf</p>
         </div>
-        <h3>11k</h3>
-        <h4>Followers</h4>
-        <p>1099 Today</p>
+        <h3 class="info-value">11k</h3>
+        <h4 class="info-text">Followers</h4>
+        <div class="statistic">
+          <img src="./images/icon-up.svg" />
+          <p class="info-day-value">1099 Today</p>
+        </div>
       </div>
 
-      <div>
-        <div>
+      <div class="info-item youtube">
+        <div class="info-username">
           <img src="./images/icon-youtube.svg" alt="youtube logo" />
           <p>Nathan F.</p>
         </div>
-        <h3>8239</h3>
-        <h4>Subscribers</h4>
-        <p>144 Today</p>
+        <h3 class="info-value">8239</h3>
+        <h4 class="info-text">Subscribers</h4>
+        <div class="statistic">
+          <img src="./images/icon-down.svg" />
+          <p class="info-day-value down">144 Today</p>
+        </div>
       </div>
     </section>
 
-    <section>
+    <section class="container">
       <h2>Overview - Today</h2>
 
       <div>
