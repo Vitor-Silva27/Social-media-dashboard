@@ -37,7 +37,7 @@ body {
     color: hsl(230, 17%, 14%);
     margin-bottom: 10px;
 }
-.title p{
+.subtitle{
     font-size: 0.875em;
     letter-spacing: 1px;
     font-weight: 700;
@@ -49,7 +49,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
-    grid-auto-flow: row;
+    grid-auto-flow: column;
 }
 
 .info-item{
@@ -120,8 +120,50 @@ body {
     font-size: 0.8em;
     font-weight: 700;
     color: hsl(163, 72%, 41%);
-    margin-left: 5px;
+    margin-left: 3px;
 }
 .down{
     color: hsl(356, 69%, 56%);
+}
+
+/* overview section */
+
+.overview h2{
+    font-size: 1.5em;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.overview-cards{   
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 125px);
+}
+.over-card{
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 5px;
+}
+.over-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: 25px auto;
+}
+.over-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 200px;
+    margin: 0 auto 25px auto;
+}
+.over-stats .statistic{
+    margin: 0;
+}
+.over-stats h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(230, 17%, 14%);
 }
