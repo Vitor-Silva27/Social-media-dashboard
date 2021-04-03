@@ -125,6 +125,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(-23px);
   -ms-transform: translateX(-23px);
   transform: translateX(-23px);
+  background-color: #333A56;
 }
 
 /* main information section*/
