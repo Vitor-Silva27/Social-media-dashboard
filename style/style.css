@@ -270,6 +270,9 @@ input:checked + .slider:before {
 }
 
 /* dark mode */
+* {
+  transition: background-color 0.7s ease, color 1s ease;
+}
 body.dark-mode {
   background-color: hsl(230, 17%, 14%);
 }

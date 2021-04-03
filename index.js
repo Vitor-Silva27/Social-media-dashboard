@@ -2,10 +2,8 @@ const switchButton = document.querySelector('[name=switch]');
 const darkItems = document.querySelectorAll('.canBeDark');
 
 function handleClick(){
-    const switchModeFunction = switchButton.checked? addDarkMode: removeDarkMode;
-    runFuncInArray(darkItems, switchModeFunction)
+    runFuncInArray(darkItems, toggleDarkMode);
 }
  
 const runFuncInArray = (list, func) => list.forEach(item => func(item));
-const removeDarkMode = item => item.classList.remove('dark-mode');
-const addDarkMode = item =>  item.classList.add('dark-mode');
+const toggleDarkMode = item => item.classList.toggle('dark-mode');
